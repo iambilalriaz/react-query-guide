@@ -25,13 +25,15 @@ const Users = () => {
 
   return (
     <div>
-      <input
-        placeholder='Enter name'
-        value={username}
-        onChange={(e) => setUsername(e?.target?.value)}
-      />
-      <button onClick={refetch}>Fetch Users</button>
+      <div>
+        <input
+          placeholder='Enter name'
+          value={username}
+          onChange={(e) => setUsername(e?.target?.value)}
+        />
+      </div>
       <button onClick={() => mutate(username)}>Add User</button>
+      <button onClick={refetch}>Fetch Users</button>
       {data?.data?.map((user) => (
         <p key={user?.id}>{user?.name}</p>
       ))}

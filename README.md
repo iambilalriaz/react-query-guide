@@ -1,3 +1,4 @@
+![React Query](./src/assets/rq.png)
 Data fetching is an essential part of building modern web applications. As there is no specific approach to fetch data from API in React, developers do it in their own ways. One of the most popular method is to use React's hook `useEffect`.
 
 ## Disadvantages of existing data fetching techniques (useEffect)
@@ -332,13 +333,15 @@ const Users = () => {
 
   return (
     <div>
-      <input
-        placeholder='Enter name'
-        value={username}
-        onChange={(e) => setUsername(e?.target?.value)}
-      />
-      <button onClick={refetch}>Fetch Users</button>
+      <div>
+        <input
+          placeholder='Enter name'
+          value={username}
+          onChange={(e) => setUsername(e?.target?.value)}
+        />
+      </div>
       <button onClick={() => mutate(username)}>Add User</button>
+      <button onClick={refetch}>Fetch Users</button>
       {data?.data?.map((user) => (
         <p key={user?.id}>{user?.name}</p>
       ))}
@@ -349,6 +352,10 @@ const Users = () => {
 export default Users;
 ```
 
-In conclusion, React Query is a powerful tool for simplifying data management in React applications, making it easier to fetch, cache, and manage data with ease. Whether you're a beginner or an experienced developer, incorporating React Query into your workflow can greatly enhance the performance and efficiency of your applications. So, start exploring its capabilities today and elevate your React development game.
+## Conclusion
+
+React Query is a powerful tool for simplifying data management in React applications, making it easier to fetch, cache, and manage data with ease. Whether you're a beginner or an experienced developer, incorporating React Query into your workflow can greatly enhance the performance and efficiency of your applications. So, start exploring its capabilities today and elevate your React development game.
+
+## Links
 
 Co-authored by - [harisbinejaz](https://dev.to/harisbinejaz)
