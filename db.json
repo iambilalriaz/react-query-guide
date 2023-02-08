@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Bilal Riaz"
+    },
+    {
+      "id": 2,
+      "name": "Haris Ejaz"
+    },
+    {
+      "id": 3,
+      "name": "Hamza Hameed"
+    },
+    {
+      "id": 4,
+      "name": "Zeeshan Ali"
+    }
+  ]
+}
